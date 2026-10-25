@@ -1,0 +1,23 @@
+- type: polymorph
+  id: AdminObserverPolymorph
+  configuration:
+    entity: AdminObserver
+    polymorphPopup: null
+    exitPolymorphPopup: null
+    transferName: true
+    inventory: None
+    forced: true
+    allowRepeatedMorphs: false
+    duration: 99999
+
+- type: polymorph
+  id: ObserverPolymorph
+  configuration:
+    entity: Observer
+    polymorphPopup: null
+    exitPolymorphPopup: null
+    transferName: true
+    inventory: None
+    forced: true
+    allowRepeatedMorphs: false
+    duration: 99999

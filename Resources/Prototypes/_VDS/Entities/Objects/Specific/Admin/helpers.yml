@@ -41,3 +41,23 @@
     - Syndicate
     - Freelance
     - Binary
+
+- type: entity
+  id: HandTunnelerAdmeme
+  suffix: Admeme
+  parent: BaseItem
+  name: interdimensional tunneler
+  description: Allows you to open stable holes that are not limited by distance.
+  components:
+  - type: Sprite
+    sprite: Objects/Tools/handdrilldiamond.rsi
+    layers:
+    - state: handdrill
+      color: green
+  - type: HandTeleporter
+    newPortalSound: /Audio/_VDS/Ambience/Tense/thud4.ogg
+    clearPortalSound: /Audio/_VDS/Ambience/Tense/thud4.ogg
+    allowPortalsOnDifferentGrids: true
+    allowPortalsOnDifferentMaps: true
+    firstPortalPrototype: PortalFloorChasm
+    secondPortalPrototype: PortalFloorChasm

@@ -1,0 +1,13 @@
+- type: entity
+  id: PortalFloorChasm
+  parent: BasePortal
+  name: chasm?
+  description: A light breeze is rushing through from the other side.
+  components:
+  - type: Sprite
+    sprite: Tiles/Planet/Chasms/basalt_chasm.rsi
+    layers:
+    - state: full
+  - type: Portal
+    arrivalSound: /Audio/_VDS/Ambience/Tense/thud2short.ogg #change later
+    departureSound: /Audio/_VDS/Ambience/Tense/thud1.ogg #change later

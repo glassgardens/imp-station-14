@@ -1,0 +1,36 @@
+- type: entity
+  parent: BaseAction
+  id: ActionRevertPolymorphInstant
+  name: Revert
+  description: Revert back into your original form.
+  components:
+  - type: InstantAction
+    event: !type:RevertPolymorphActionEvent
+
+- type: entity
+  parent: BaseActionPolymorph
+  id: ActionPolymorphAdminObserver
+  name: Aghost Polymorph
+  description: Polymorphs you into an aghost.
+  components:
+  - type: Action
+    icon:
+      sprite: Mobs/Ghosts/ghost_human.rsi
+      state: icon
+  - type: InstantAction
+    event: !type:PolymorphActionEvent
+      protoId: AdminObserverPolymorph
+
+- type: entity
+  parent: BaseActionPolymorph
+  id: ActionPolymorphObserver
+  name: Aghost Polymorph
+  description: Polymorphs you into a ghost.
+  components:
+  - type: Action
+    icon:
+      sprite: Mobs/Ghosts/ghost_human.rsi
+      state: icon
+  - type: InstantAction
+    event: !type:PolymorphActionEvent
+      protoId: ObserverPolymorph
