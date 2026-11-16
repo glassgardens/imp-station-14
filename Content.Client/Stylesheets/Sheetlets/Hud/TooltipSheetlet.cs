@@ -29,7 +29,7 @@ public sealed class TooltipSheetlet<T> : Sheetlet<T> where T: PalettedStylesheet
         [
             E<PanelContainer>()
                 .Class(StyleClass.TooltipPanel)
-                .Modulate(Color.Gray.WithAlpha(0.9f)) // TODO: you know the drill by now
+                .Modulate(sheet.PrimaryPalette.Element.WithAlpha(0.9f)) // TODO: you know the drill by now // VDS
                 .Panel(tooltipBox),
             E<RichTextLabel>()
                 .Class(StyleClass.TooltipTitle)

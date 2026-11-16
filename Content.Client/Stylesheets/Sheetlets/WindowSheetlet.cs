@@ -63,7 +63,7 @@ public sealed class WindowSheetlet<T> : Sheetlet<T>
                 .Font(sheet.BaseFont.GetFont(14, FontKind.Bold)),
             E<Label>()
                 .Class("windowTitleAlert")
-                .FontColor(Color.White)
+                .FontColor(sheet.HighlightPalette.Text) // VDS
                 .Font(sheet.BaseFont.GetFont(14, FontKind.Bold)),
             // TODO: maybe also change everything here to `NanoWindow` or something
             E()
@@ -126,7 +126,7 @@ public sealed class WindowSheetlet<T> : Sheetlet<T>
             E<Label>()
                 .Class("WindowFooterText") // TODO: hardcoding font
                 .Prop(Label.StylePropertyFont, sheet.BaseFont.GetFont(8))
-                .Prop(Label.StylePropertyFontColor, Color.FromHex("#757575")),
+                .Prop(Label.StylePropertyFontColor, sheet.HighlightPalette.TextDark), // VDS
         ];
     }
 }

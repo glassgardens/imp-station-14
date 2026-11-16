@@ -28,7 +28,7 @@ public sealed class PlaceholderSheetlet<T> : Sheetlet<T> where T: PalettedStyles
             E<Label>()
                 .Class(Placeholder.StyleClassPlaceholderText)
                 .Font(sheet.BaseFont.GetFont(16))
-                .FontColor(new Color(103, 103, 103, 128)), // TODO: fix hardcoded color
+                .FontColor(sheet.HighlightPalette.TextDark), // TODO: fix hardcoded color // VDS
         ];
     }
 }

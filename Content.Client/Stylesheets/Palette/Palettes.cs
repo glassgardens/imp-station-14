@@ -16,9 +16,9 @@ public static class Palettes
 
     // status tones
     public static readonly ColorPalette Red = ColorPalette.FromHexBase("#b62124", chromaShift: 0.02f);
-    public static readonly ColorPalette Amber = ColorPalette.FromHexBase("#c18e36");
+    //public static readonly ColorPalette Amber = ColorPalette.FromHexBase("#c18e36");
     public static readonly ColorPalette Green = ColorPalette.FromHexBase("#3c854a");
-    public static readonly StatusPalette Status = new([Red.Base, Amber.Base, Green.Base]);
+    //public static readonly StatusPalette Status = new([Red.Base, Amber.Base, Green.Base]);
 
     // highlight tones
     public static readonly ColorPalette Gold = ColorPalette.FromHexBase("#a88b5e");
@@ -26,5 +26,17 @@ public static class Palettes
 
     // Intended to be used with `ModulateSelf` to darken / lighten something
     public static readonly ColorPalette AlphaModulate = ColorPalette.FromHexBase("#ffffff");
+
+    //VDS
+    public static readonly ColorPalette Amber = ColorPalette.FromHexBase("#FFAD1F");
+    public static readonly ColorPalette Cream = ColorPalette.FromHexBase("#F0DF91");
+    public static readonly ColorPalette Bronze = ColorPalette.FromHexBase("#462D00");
+    public static readonly ColorPalette Brown = ColorPalette.FromHexBase("#4e1f00");
+    public static readonly ColorPalette BrownDark = ColorPalette.FromHexBase("#130D00");
+    public static readonly ColorPalette Black = ColorPalette.FromHexBase("#000000");
+    public static readonly ColorPalette White = ColorPalette.FromHexBase("#ffffff");
+
+    public static readonly StatusPalette Status = new([Red.Base, Amber.Base, Green.Base]);
+
 
 }

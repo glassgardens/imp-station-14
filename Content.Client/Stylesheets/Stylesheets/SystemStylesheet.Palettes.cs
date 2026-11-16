@@ -4,9 +4,9 @@ namespace Content.Client.Stylesheets.Stylesheets;
 
 public partial class SystemStylesheet
 {
-    public override ColorPalette PrimaryPalette => Palettes.Cyan;
-    public override ColorPalette SecondaryPalette => Palettes.Neutral;
+    public override ColorPalette PrimaryPalette => Palettes.Bronze;
+    public override ColorPalette SecondaryPalette => Palettes.Brown;
     public override ColorPalette PositivePalette => Palettes.Green;
     public override ColorPalette NegativePalette => Palettes.Red;
-    public override ColorPalette HighlightPalette => Palettes.Maroon;
+    public override ColorPalette HighlightPalette => Palettes.Cream;
 }
